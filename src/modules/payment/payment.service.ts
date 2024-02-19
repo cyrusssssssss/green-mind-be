@@ -27,7 +27,7 @@ export class PaymentService {
       vnp_OrderInfo: "PaymentForOrder",
       vnp_OrderType: 'other',
       vnp_Amount: amount * 100, // VNPAY expects amount in VNĐ, so multiply by 100
-      vnp_ReturnUrl: 'http://localhost:3001/paymentStatus',
+      vnp_ReturnUrl: 'https://greenmindbyrosa.vercel.app/paymentStatus',
       vnp_IpAddr: '127.0.0.1',
       vnp_CreateDate: Number(vnp_CreateDate),
     };
